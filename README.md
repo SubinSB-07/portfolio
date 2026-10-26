@@ -2,7 +2,8 @@
 
 A dark, minimal, animation-driven portfolio website built as a single HTML file. It showcases my skills, projects and contact details, with smooth scrolling, a custom cursor and scroll-triggered animations.
 
-**Live site:** [YOUR-NETLIFY-LINK](https://YOUR-NETLIFY-LINK)
+**Live site:** subinsb-portfolio.netlify.app
+
 
 ---
 

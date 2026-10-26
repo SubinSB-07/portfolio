@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a0a0f">
+  <!-- EDIT: Page title and search/social descriptions. -->
+  <title>Subin S B — Developer &amp; AI Explorer</title>
+  <meta name="description" content="Subin S B, B.Tech CSE (AI & ML) student exploring full-stack development, Generative AI, and workflow automation.">
+  <meta property="og:title" content="Subin S B — Developer & AI Explorer">
+  <meta property="og:description" content="Thoughtful interfaces. Solid foundations. Practical automation. Explore my skills and get in touch.">
+  <meta property="og:type" content="website">
+  <!-- EDIT: Add og:url and an absolute og:image URL after deployment, if desired. -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230a0a0f'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-family='Arial' font-weight='bold' font-size='36' fill='%2322D3EE'%3ES%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Exact versions. The CSS below also keeps the site usable if CDNs fail. -->
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <style>
+    :root{--accent:#22D3EE;/* EDIT: Change the single accent here. */--bg:#0a0a0f;--text:#f4f4f5;--muted:#a1a1ae;--border:#ffffff19;--panel:#111118;--glow:color-mix(in srgb,var(--accent) 12%,transparent)}
+    *,*::before,*::after{box-sizing:border-box}html{scroll-padding-top:100px}body{margin:0;background:var(--bg);color:var(--text);font-family:'Space Grotesk',sans-serif;-webkit-font-smoothing:antialiased}body.menu-open{overflow:hidden}::selection{background:var(--accent);color:var(--bg)}a{color:inherit;text-decoration:none}button,input,textarea{font:inherit}button,a,input,textarea{-webkit-tap-highlight-color:transparent}button{cursor:pointer}button:disabled{cursor:wait}a[aria-disabled=true]{cursor:not-allowed;opacity:.5}a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{outline:2px solid var(--accent);outline-offset:5px}button{color:inherit}p{line-height:1.8;color:var(--muted)}h1,h2,h3,p{margin:0}svg{display:block}section{scroll-margin-top:20px}main{overflow:clip}.wrap{width:min(1200px,calc(100% - 64px));margin-inline:auto}.section{padding-block:112px;border-top:1px solid var(--border)}.eyebrow{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}.accent{color:var(--accent)}.section-top{display:flex;justify-content:space-between;align-items:flex-start;gap:32px;margin-bottom:48px}h2{font-size:clamp(36px,5vw,64px);line-height:1.08;letter-spacing:-.055em}.section-top .eyebrow{padding-top:12px}.section-top p{max-width:310px;font-size:14px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:24px;min-height:52px;padding:14px 23px;border:1px solid var(--border);border-radius:4px;background:transparent;font-size:14px;font-weight:600;text-decoration:none}.btn.primary{background:var(--accent);color:var(--bg);border-color:var(--accent)}.btn:hover .arrow{transform:translate(3px,-3px)}.arrow{display:inline-block;transition:transform .2s ease}.actions{display:flex;flex-wrap:wrap;gap:12px}.skip{position:fixed;top:12px;left:20px;z-index:200;transform:translateY(-180%);background:var(--accent);color:var(--bg);padding:12px}.skip:focus{transform:translateY(0)}
+    .progress{position:fixed;inset:0 0 auto;height:3px;background:var(--accent);transform:scaleX(0);transform-origin:left;z-index:110;pointer-events:none}.navbar{position:fixed;top:3px;left:0;right:0;z-index:80;background:#0a0a0fd9;backdrop-filter:blur(18px);border-bottom:1px solid var(--border)}.nav-inner{height:80px;display:flex;align-items:center;justify-content:space-between}.logo{font-size:23px;font-weight:700;letter-spacing:-.08em}.logo span{color:var(--accent)}.nav-links{display:flex;gap:32px;align-items:center}.nav-link{position:relative;font-size:13px;color:var(--muted);padding-block:9px}.nav-link::after{content:'';position:absolute;bottom:1px;left:0;right:0;height:1px;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform .25s}.nav-link:hover,.nav-link[aria-current]{color:var(--text)}.nav-link:hover::after,.nav-link[aria-current]::after{transform:scaleX(1)}.menu-toggle{display:none;border:1px solid var(--border);background:transparent;border-radius:4px;width:46px;height:44px;align-items:center;justify-content:center;flex-direction:column;gap:6px}.menu-toggle span{width:18px;height:1px;background:var(--text);transition:transform .2s}.menu-toggle[aria-expanded=true] span:first-child{transform:translateY(3.5px) rotate(45deg)}.menu-toggle[aria-expanded=true] span:last-child{transform:translateY(-3.5px) rotate(-45deg)}
+    .hero{position:relative;padding-top:166px;min-height:min(900px,100svh);display:flex;flex-direction:column;justify-content:center}.hero-top{display:flex;justify-content:space-between;gap:20px;margin-bottom:40px}.status{display:flex;align-items:center;gap:10px;font-size:12px;color:var(--muted)}.status::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--accent);box-shadow:0 0 16px var(--glow)}.hero-grid{display:grid;grid-template-columns:1fr .36fr;align-items:center;gap:20px}.hero h1{font-size:clamp(62px,8.5vw,122px);font-weight:500;line-height:.98;letter-spacing:-.075em}.line{display:block;overflow:hidden;padding-bottom:.12em;margin-bottom:-.08em}.line>span{display:block}.hero-title{font-size:14px;line-height:1.8;max-width:550px;margin-top:28px}.hero-tagline{font-size:17px;max-width:490px;margin:15px 0 28px}.monogram{position:relative;aspect-ratio:1;display:grid;place-items:center;border:1px solid var(--border);border-radius:50%;background:radial-gradient(circle,var(--glow),transparent 70%)}.monogram::before{content:'';position:absolute;inset:12px;border:1px dashed var(--border);border-radius:50%}.monogram b{font-size:clamp(50px,7vw,100px);font-weight:500;letter-spacing:-.12em;padding-right:.12em}.monogram small{position:absolute;bottom:19%;font-size:9px;letter-spacing:.25em;color:var(--muted)}.orbit-dot{position:absolute;top:14%;right:14%;width:9px;height:9px;background:var(--accent);border-radius:50%}.hero-bottom{display:flex;justify-content:space-between;gap:20px;border-top:1px solid var(--border);margin-top:64px;padding-block:24px}.hero-bottom a{font-size:12px;color:var(--muted)}
+    .about-grid{display:grid;grid-template-columns:.7fr 1.3fr;gap:64px}.about-label{font-size:clamp(28px,3vw,40px);letter-spacing:-.04em;line-height:1.25}.about-copy>p{font-size:clamp(17px,2vw,21px);color:#d2d2da}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px}.stat{border-top:1px solid var(--border);padding-top:20px}.stat small{font-size:11px;color:var(--accent)}.stat h3{font-size:16px;font-weight:500;line-height:1.5;margin-top:12px}
+    .skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.skill-card{position:relative;border:1px solid var(--border);border-radius:6px;background:var(--panel);padding:28px;isolation:isolate}.skill-card::before{content:'';position:absolute;inset:0;border-radius:inherit;background:radial-gradient(ellipse at top left,var(--glow),transparent 75%);opacity:0;transition:opacity .3s;z-index:-1}.skill-card:hover::before{opacity:1}.card-number{font-size:11px;color:var(--muted)}.skill-card h3{font-size:20px;font-weight:500;margin:26px 0 20px}.tags{display:flex;flex-wrap:wrap;gap:7px}.tag{font-size:11px;padding:6px 9px;border:1px solid var(--border);border-radius:3px;color:#c0c0cb}
+    .projects-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.project-shell{perspective:1000px}.project{height:100%;border:1px solid var(--border);border-radius:6px;overflow:hidden;background:var(--panel);transform-style:preserve-3d;will-change:auto}.project-art{height:200px;display:flex;flex-direction:column;justify-content:center;padding:30px;position:relative;border-bottom:1px solid var(--border);overflow:hidden;background:radial-gradient(ellipse at top right,var(--glow),transparent 70%)}.project-art small{color:var(--muted);font-size:10px;letter-spacing:.13em}.project-art strong{font-size:42px;font-weight:500;letter-spacing:-.07em;color:var(--accent);margin-top:10px}.mini-bars{display:flex;align-items:end;gap:7px;height:34px;margin-top:16px}.mini-bars span{width:23px;background:var(--accent);opacity:.45}.mini-bars span:nth-child(1){height:35%}.mini-bars span:nth-child(2){height:70%}.mini-bars span:nth-child(3){height:50%}.mini-bars span:nth-child(4){height:100%}.code-line{font-size:13px;color:var(--muted);margin-top:18px}.flow{display:flex;align-items:center;gap:9px;margin-top:22px}.flow i{font-style:normal;border:1px solid var(--border);padding:8px;font-size:11px}.flow span{color:var(--accent)}.project-body{padding:26px;display:flex;flex-direction:column;gap:17px}.project-body .eyebrow{font-size:9px}.project h3{font-size:23px;letter-spacing:-.04em}.project p{font-size:13px}.project-links{display:flex;gap:20px;padding-top:8px}.project-links a{font-size:12px;min-height:30px;display:inline-flex;align-items:center;gap:8px}.project-note{margin-top:24px;font-size:12px}
+    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px}.contact-intro h2{font-size:clamp(42px,5.7vw,76px)}.contact-intro>p{margin:24px 0 30px;max-width:370px}.email-link{font-size:clamp(14px,2vw,20px);border-bottom:1px solid var(--accent);padding-bottom:8px;overflow-wrap:anywhere}.socials{display:flex;flex-wrap:wrap;gap:24px;margin-top:30px;font-size:13px}.field{margin-bottom:22px}.field label{display:block;font-size:12px;margin-bottom:10px;color:#c5c5ce}input,textarea{display:block;width:100%;background:var(--panel);border:1px solid var(--border);border-radius:4px;color:var(--text);padding:14px 16px}textarea{resize:vertical;min-height:140px}input::placeholder,textarea::placeholder{color:#717180}.form-status{font-size:13px;min-height:48px;margin-top:15px}.form-note{font-size:11px;margin-bottom:16px}.honeypot{display:none}.footer{border-top:1px solid var(--border);padding-block:32px}.footer-inner{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:24px}.footer p,.footer a{font-size:12px}.footer-links{display:flex;align-items:center;flex-wrap:wrap;gap:24px}.footer .btn{min-height:40px;padding:9px 14px}
+    .loader{display:none;position:fixed;inset:0;z-index:150;background:var(--bg);place-content:center;text-align:center;pointer-events:none}.loading .loader{display:grid;animation:loader-failsafe .4s 2.6s forwards}.loader-name{font-size:clamp(32px,7vw,72px);letter-spacing:-.06em}.loader-track{height:2px;background:var(--border);margin-top:22px;overflow:hidden}.loader-track::after{content:'';display:block;height:100%;background:var(--accent);transform-origin:left;animation:load-track .85s ease both}.loader small{font-size:10px;letter-spacing:.18em;color:var(--muted);margin-top:18px}.cursor-dot,.cursor-ring{display:none;position:fixed;top:0;left:0;pointer-events:none;border-radius:50%;z-index:120}.cursor-dot{width:5px;height:5px;background:var(--accent)}.cursor-ring{width:38px;height:38px;border:1px solid var(--accent);align-items:center;justify-content:center}.cursor-ring span{font-size:9px;color:var(--accent);opacity:0}.cursor-enabled,.cursor-enabled a,.cursor-enabled button{cursor:none}.cursor-enabled .cursor-dot{display:block}.cursor-enabled .cursor-ring{display:flex}
+    @keyframes load-track{from{transform:scaleX(0)}to{transform:scaleX(1)}}@keyframes loader-failsafe{to{opacity:0;visibility:hidden}}
+    @media(min-width:1600px){.hero{min-height:880px}}@media(max-width:900px){.skills-grid{grid-template-columns:repeat(2,1fr)}.projects-grid{grid-template-columns:1fr}.project{display:grid;grid-template-columns:.8fr 1fr}.project-art{height:100%;min-height:260px;border-bottom:0;border-right:1px solid var(--border)}.about-grid{gap:36px}.contact-grid{gap:40px}.nav-links{gap:22px}.section{padding-block:88px}.hero{min-height:800px}.monogram small{display:none}}
+    @media(max-width:640px){.wrap{width:calc(100% - 40px)}.nav-inner{height:68px}.menu-toggle{display:flex}.nav-links{display:none;position:absolute;top:68px;left:0;right:0;background:var(--bg);padding:24px 20px 32px;border-bottom:1px solid var(--border);flex-direction:column;align-items:stretch;gap:8px}.nav-links.open{display:flex}.nav-link{padding:12px;font-size:18px}.hero{padding-top:125px;min-height:auto}.hero-top{margin-bottom:35px}.hero-top>.eyebrow{display:none}.hero-grid{grid-template-columns:1fr}.hero h1{font-size:clamp(58px,13.8vw,86px)}.monogram{display:none}.hero-title{font-size:12px;max-width:320px}.hero-tagline{font-size:15px}.hero-bottom{margin-top:48px}.hero-bottom .eyebrow{font-size:9px}.section{padding-block:68px}.section-top{display:block;margin-bottom:32px}.section-top .eyebrow{margin-bottom:20px;padding-top:0}.section-top p{margin-top:20px}.about-grid,.contact-grid{grid-template-columns:1fr;gap:30px}.stats{gap:12px}.stat h3{font-size:13px}.skills-grid{grid-template-columns:1fr}.skill-card{padding:25px}.skill-card h3{margin-top:20px}.project{display:block}.project-art{height:190px;min-height:0;border-right:0;border-bottom:1px solid var(--border)}.footer-inner{align-items:flex-start;flex-direction:column}.contact-intro>p{margin-top:20px}.socials{margin-bottom:10px}}
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.loader,.cursor-dot,.cursor-ring{display:none!important}.cursor-enabled,.cursor-enabled a,.cursor-enabled button{cursor:auto}}
+  </style>
+  <script>if (!matchMedia('(prefers-reduced-motion: reduce)').matches) document.documentElement.classList.add('loading');</script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="progress" aria-hidden="true"></div>
+  <div class="loader" aria-hidden="true"><div class="loader-name">Subin S B<span class="accent">.</span></div><div class="loader-track"></div><small>IDEAS INTO INTERFACES</small></div>
+  <div class="cursor-dot" aria-hidden="true"></div><div class="cursor-ring" aria-hidden="true"><span>View</span></div>
+  <header class="navbar">
+    <nav class="nav-inner wrap" aria-label="Main navigation">
+      <!-- EDIT: Monogram and accessible name. -->
+      <a href="#home" class="logo" aria-label="Subin S B home">SSB<span>.</span></a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open navigation"><span></span><span></span></button>
+      <div class="nav-links" id="nav-links"><a class="nav-link" href="#about">About</a><a class="nav-link" href="#skills">Skills</a><a class="nav-link" href="#projects">Projects</a><a class="nav-link" href="#contact">Let's talk <span class="accent" aria-hidden="true">↗</span></a></div>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero wrap" id="home" aria-labelledby="hero-heading">
+      <div class="hero-top"><span class="status">Learning. Building. Iterating.</span><span class="eyebrow">Personal portfolio / 2026</span></div>
+      <div class="hero-grid">
+        <div>
+          <!-- EDIT: Hero name, headline, title, and tagline. -->
+          <p class="eyebrow mb-5" style="margin-bottom:20px">Hello, I'm Subin S B</p>
+          <h1 id="hero-heading"><span class="line"><span>Turning ideas</span></span><span class="line"><span>into <span class="accent">impact.</span></span></span></h1>
+          <p class="hero-title">B.Tech CSE (AI &amp; ML) student | Full-stack developer | GenAI &amp; automation</p>
+          <p class="hero-tagline">Thoughtful interfaces. Solid foundations.<br>Automation that makes room for more.</p>
+          <div class="actions"><a class="btn primary magnetic" href="#projects">View Projects <span class="arrow" aria-hidden="true">↗</span></a><a class="btn" href="#contact">Contact Me <span class="arrow" aria-hidden="true">↗</span></a></div>
+        </div>
+        <div class="monogram" aria-hidden="true"><b>S<span class="accent">B</span></b><small>BUILD / LEARN / REPEAT</small><span class="orbit-dot"></span></div>
+      </div>
+      <div class="hero-bottom"><span class="eyebrow">Code with curiosity. Build with purpose.</span><a href="#about">Scroll to explore <span class="accent" aria-hidden="true">↓</span></a></div>
+    </section>
+    <section class="section" id="about" aria-labelledby="about-heading">
+      <div class="wrap"><div class="section-top reveal"><p class="eyebrow">01 / About me</p><h2 id="about-heading">Curiosity is<br>the starting point.</h2></div>
+        <div class="about-grid"><div class="about-label reveal">A developer in progress.<br><span class="accent">A builder at heart.</span></div><div class="about-copy">
+          <!-- EDIT: Bio and the three focus areas; these are not invented numerical achievements. -->
+          <p class="reveal">I'm Subin, a B.Tech CSE (AI &amp; ML) student building a strong foundation in data structures, databases, and software development. I enjoy connecting clean interfaces with practical backend systems, and exploring how Generative AI and n8n can simplify everyday workflows. Every project is a chance to understand more, solve a real problem, and make the next version better.</p>
+          <div class="stats"><div class="stat reveal"><small>01 / BUILD</small><h3>MERN<br>Full-Stack</h3></div><div class="stat reveal"><small>02 / SOLVE</small><h3>DSA in<br>C++ &amp; Python</h3></div><div class="stat reveal"><small>03 / AUTOMATE</small><h3>GenAI &amp; n8n<br>Automation</h3></div></div>
+        </div></div>
+      </div>
+    </section>
+    <section class="section" id="skills" aria-labelledby="skills-heading"><div class="wrap">
+      <div class="section-top reveal"><div><p class="eyebrow" style="margin-bottom:18px">02 / My toolkit</p><h2 id="skills-heading">The tools behind<br>the thinking.</h2></div><p>From the first component to the final API call, a growing toolkit for building useful things.</p></div>
+      <!-- EDIT: Skill categories and tags. Duplicate a skill-card to add a category. -->
+      <div class="skills-grid">
+        <article class="skill-card reveal"><span class="card-number">01 / INTERFACES</span><h3>Frontend</h3><div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">React</span><span class="tag">Bootstrap</span><span class="tag">Tailwind CSS</span></div></article>
+        <article class="skill-card reveal"><span class="card-number">02 / SYSTEMS</span><h3>Backend</h3><div class="tags"><span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">REST APIs</span><span class="tag">MERN stack</span></div></article>
+        <article class="skill-card reveal"><span class="card-number">03 / DATA</span><h3>Databases</h3><div class="tags"><span class="tag">MongoDB</span><span class="tag">SQLite</span><span class="tag">DBMS fundamentals</span></div></article>
+        <article class="skill-card reveal"><span class="card-number">04 / FOUNDATIONS</span><h3>Languages</h3><div class="tags"><span class="tag">Python</span><span class="tag">C++</span><span class="tag">JavaScript</span></div></article>
+        <article class="skill-card reveal"><span class="card-number">05 / POSSIBILITIES</span><h3>AI &amp; Automation</h3><div class="tags"><span class="tag">Generative AI</span><span class="tag">n8n</span><span class="tag">Workflow automation</span></div></article>
+        <article class="skill-card reveal"><span class="card-number">06 / PROBLEM SOLVING</span><h3>DSA</h3><div class="tags"><span class="tag">Data structures</span><span class="tag">Algorithms</span><span class="tag">C++ &amp; Python</span><span class="tag">Problem solving</span></div></article>
+      </div>
+    </div></section>
+    <section class="section" id="projects" aria-labelledby="projects-heading"><div class="wrap">
+      <div class="section-top reveal"><div><p class="eyebrow" style="margin-bottom:18px">03 / Project space</p><h2 id="projects-heading">Ideas worth<br>building.</h2></div><p>A space for full-stack experiments, useful tools, and smarter workflows.</p></div>
+      <!-- EDIT: Replace these illustrative projects with your real work. Add real URLs,
+           then remove aria-disabled="true" from their links. To add a project,
+           duplicate a complete project-shell element; interactions bind automatically. -->
+      <div class="projects-grid">
+        <div class="project-shell reveal"><article class="project" aria-labelledby="project-one">
+          <div class="project-art" aria-hidden="true"><small>01 / FULL-STACK APPLICATION</small><strong>StudySpace<span style="color:var(--text)">.</span></strong><div class="mini-bars"><span></span><span></span><span></span><span></span></div></div>
+          <div class="project-body"><span class="eyebrow">Sample concept / Replace with your work</span><h3 id="project-one">StudySpace</h3><p>A student dashboard concept for organizing tasks, tracking learning goals, and keeping study resources in one place.</p><div class="tags"><span class="tag">React</span><span class="tag">Express</span><span class="tag">MongoDB</span></div><div class="project-links"><a href="#projects" aria-disabled="true" aria-label="StudySpace live demo unavailable">Live <span aria-hidden="true">↗</span></a><a href="#projects" aria-disabled="true" aria-label="StudySpace repository unavailable">GitHub <span aria-hidden="true">↗</span></a></div></div>
+        </article></div>
+        <div class="project-shell reveal"><article class="project" aria-labelledby="project-two">
+          <div class="project-art" aria-hidden="true"><small>02 / AI &amp; AUTOMATION</small><strong>FlowPilot<span style="color:var(--text)">.</span></strong><div class="flow"><i>Input</i><span>→</span><i>AI</i><span>→</span><i>Action</i></div></div>
+          <div class="project-body"><span class="eyebrow">Sample concept / Replace with your work</span><h3 id="project-two">FlowPilot</h3><p>A workflow concept that turns incoming information into concise AI summaries and routes the next action automatically.</p><div class="tags"><span class="tag">n8n</span><span class="tag">GenAI</span><span class="tag">JavaScript</span></div><div class="project-links"><a href="#projects" aria-disabled="true" aria-label="FlowPilot live demo unavailable">Live <span aria-hidden="true">↗</span></a><a href="#projects" aria-disabled="true" aria-label="FlowPilot repository unavailable">GitHub <span aria-hidden="true">↗</span></a></div></div>
+        </article></div>
+        <div class="project-shell reveal"><article class="project" aria-labelledby="project-three">
+          <div class="project-art" aria-hidden="true"><small>03 / CS FUNDAMENTALS</small><strong>AlgoNotes<span style="color:var(--text)">.</span></strong><div class="code-line">&lt; learn / solve / repeat &gt;</div></div>
+          <div class="project-body"><span class="eyebrow">Sample concept / Replace with your work</span><h3 id="project-three">AlgoNotes</h3><p>A DSA practice journal concept for storing solutions, comparing approaches, and revisiting the patterns behind problems.</p><div class="tags"><span class="tag">Node.js</span><span class="tag">SQLite</span><span class="tag">JavaScript</span></div><div class="project-links"><a href="#projects" aria-disabled="true" aria-label="AlgoNotes live demo unavailable">Live <span aria-hidden="true">↗</span></a><a href="#projects" aria-disabled="true" aria-label="AlgoNotes repository unavailable">GitHub <span aria-hidden="true">↗</span></a></div></div>
+        </article></div>
+      </div><p class="project-note reveal">These are illustrative project concepts. Live demos and repositories will appear when real projects are added.</p>
+    </div></section>
+    <section class="section" id="contact" aria-labelledby="contact-heading"><div class="wrap contact-grid">
+      <div class="contact-intro reveal"><p class="eyebrow" style="margin-bottom:22px">04 / Start a conversation</p><h2 id="contact-heading">Have an idea?<br><span class="accent">Let's build it.</span></h2><p>Open to conversations about projects, collaboration, and opportunities to learn by building.</p>
+        <!-- EDIT: Email and social URLs here and in the footer. -->
+        <a class="email-link" href="mailto:sbsubin7127@gmail.com">sbsubin7127@gmail.com</a>
+        <div class="socials"><a href="https://github.com/SubinSB-07" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/subin-sb-00b39536b/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></div>
+      </div>
+      <!-- EDIT: Replace YOUR_FORM_ID with your Formspree form ID. No secret keys belong here. -->
+      <form id="contact-form" class="reveal" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" aria-label="Contact Subin">
+        <div class="field"><label for="name">Your name</label><input id="name" name="name" autocomplete="name" placeholder="How should I call you?" required maxlength="100"></div>
+        <div class="field"><label for="email">Email address</label><input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required maxlength="254"></div>
+        <div class="field"><label for="message">What's on your mind?</label><textarea id="message" name="message" placeholder="Tell me a little about your idea…" required minlength="10" maxlength="5000" rows="5"></textarea></div>
+        <div class="honeypot" aria-hidden="true"><label for="website">Leave this empty</label><input id="website" name="_gotcha" tabindex="-1" autocomplete="off"></div>
+        <p class="form-note">Messages are processed by Formspree. You can also email me directly.</p>
+        <button class="btn primary magnetic" type="submit">Send Message <span class="arrow" aria-hidden="true">↗</span></button>
+        <p class="form-status" id="form-status" role="status" aria-live="polite" aria-atomic="true"></p>
+        <noscript><p>JavaScript is disabled. Please use the email link to contact me.</p></noscript>
+      </form>
+    </div></section>
+  </main>
+  <footer class="footer"><div class="wrap footer-inner"><p>© <span id="year">2026</span> Subin S B. Built with curiosity.</p><div class="footer-links"><a href="https://github.com/SubinSB-07" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/subin-sb-00b39536b/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="#home">Back to top ↑</a>
+    <!-- EDIT: Set your resume URL in CONFIG below. Hosted PDFs work best.
+         A same-origin URL supports download; external hosts may open the PDF instead. -->
+    <a class="btn" id="resume-link" href="#" aria-disabled="true">Resume unavailable <span aria-hidden="true">↓</span></a></div></div></footer>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+  <script>
+    'use strict';
+    // EDIT: Resume link only. Use an HTTPS PDF URL or a local PDF path when hosting.
+    const CONFIG = { resumeUrl: '' };
+    const select = (selector, root = document) => root.querySelector(selector);
+    const selectAll = (selector, root = document) => [...root.querySelectorAll(selector)];
+    const motionPreference = matchMedia('(prefers-reduced-motion: reduce)');
+    const reducedMotion = motionPreference.matches;
+    const hasGSAP = typeof window.gsap !== 'undefined';
+    const hasScrollTrigger = hasGSAP && typeof window.ScrollTrigger !== 'undefined';
+    let lenis;
+    document.getElementById('year').textContent = new Date().getFullYear();
+    if (CONFIG.resumeUrl.trim()) {
+      const resumeLink = select('#resume-link');
+      resumeLink.href = CONFIG.resumeUrl;
+      resumeLink.removeAttribute('aria-disabled');
+      resumeLink.setAttribute('download', 'Subin-S-B-Resume.pdf');
+      resumeLink.innerHTML = 'Download Resume <span aria-hidden="true">↓</span>';
+    }
+    // Keep unavailable sample links honest and prevent meaningless navigation.
+    document.addEventListener('click', event => {
+      if (event.target.closest('a[aria-disabled="true"]')) event.preventDefault();
+    });
+    if (hasScrollTrigger) gsap.registerPlugin(ScrollTrigger);
+    if (!reducedMotion && hasScrollTrigger && typeof window.Lenis !== 'undefined') {
+      lenis = new Lenis({ duration: 1.05, smoothWheel: true, syncTouch: false });
+      lenis.on('scroll', ScrollTrigger.update);
+      gsap.ticker.add(time => lenis.raf(time * 1000));
+    }
+    // One mobile menu, including Escape, outside click, and keyboard focus handling.
+    const menuToggle = select('.menu-toggle');
+    const menuLinks = select('#nav-links');
+    function setMenu(open, returnFocus = false) {
+      menuToggle.setAttribute('aria-expanded', String(open));
+      menuToggle.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
+      menuLinks.classList.toggle('open', open);
+      document.body.classList.toggle('menu-open', open);
+      if (lenis) open ? lenis.stop() : lenis.start();
+      if (returnFocus) menuToggle.focus();
+    }
+    menuToggle.addEventListener('click', () => setMenu(menuToggle.getAttribute('aria-expanded') !== 'true'));
+    document.addEventListener('keydown', event => {
+      if (menuToggle.getAttribute('aria-expanded') !== 'true') return;
+      if (event.key === 'Escape') setMenu(false, true);
+      if (event.key === 'Tab') {
+        const lastLink = menuLinks.lastElementChild;
+        if (event.shiftKey && document.activeElement === menuToggle) { event.preventDefault(); lastLink.focus(); }
+        else if (!event.shiftKey && document.activeElement === lastLink) { event.preventDefault(); menuToggle.focus(); }
+      }
+    });
+    document.addEventListener('click', event => {
+      if (!event.target.closest('.navbar') && menuToggle.getAttribute('aria-expanded') === 'true') setMenu(false);
+    });
+    matchMedia('(min-width: 641px)').addEventListener('change', event => { if (event.matches) setMenu(false); });
+    selectAll('a[href^="#"]:not([aria-disabled="true"])').forEach(link => {
+      link.addEventListener('click', event => {
+        const hash = link.getAttribute('href');
+        if (hash.length < 2) return;
+        const target = document.getElementById(hash.slice(1));
+        if (!target) return;
+        event.preventDefault();
+        setMenu(false);
+        if (lenis) lenis.scrollTo(target, { offset: -90 });
+        else window.scrollTo({ top: target.getBoundingClientRect().top + window.scrollY - 90, behavior: reducedMotion ? 'instant' : 'smooth' });
+        // Move keyboard focus to the destination without jumping past the animation.
+        if (!target.hasAttribute('tabindex')) target.setAttribute('tabindex', '-1');
+        target.focus({ preventScroll: true });
+        // Sandboxed/file previews may disallow history updates.
+        try { history.replaceState(null, '', hash); } catch (_) { /* Navigation still works. */ }
+      });
+    });
+    // Progress stays functional even when animation libraries are unavailable.
+    let scrollScheduled = false;
+    function updateProgress() {
+      const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+      select('.progress').style.transform = `scaleX(${scrollable > 0 ? Math.min(1, Math.max(0, window.scrollY / scrollable)) : 0})`;
+      scrollScheduled = false;
+    }
+    window.addEventListener('scroll', () => {
+      if (!scrollScheduled) { scrollScheduled = true; requestAnimationFrame(updateProgress); }
+    }, { passive: true });
+    window.addEventListener('resize', updateProgress);
+    updateProgress();
+    if ('IntersectionObserver' in window) {
+      const activeObserver = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) return;
+          selectAll('.nav-link').forEach(link => {
+            if (link.hash === `#${entry.target.id}`) link.setAttribute('aria-current', 'location');
+            else link.removeAttribute('aria-current');
+          });
+        });
+      }, { rootMargin: '-15% 0px -55% 0px', threshold: 0 });
+      selectAll('main section').forEach(section => activeObserver.observe(section));
+    }
+    // Content is visible by default. Animation is a progressive enhancement.
+    if (hasGSAP && !reducedMotion) {
+      const intro = gsap.timeline({ onComplete: () => document.documentElement.classList.remove('loading') });
+      intro.to('.loader', { opacity: 0, duration: .45, delay: .8 })
+        .from('.line > span', { yPercent: 110, opacity: 0, duration: .9, stagger: .12, ease: 'power3.out' }, '-=.1')
+        .from('.hero-title, .hero-tagline, .hero .actions, .monogram', { y: 22, opacity: 0, duration: .7, stagger: .09 }, '-=.55');
+      if (hasScrollTrigger) {
+        selectAll('.reveal').forEach(element => {
+          const siblings = [...element.parentElement.children].filter(child => child.classList.contains('reveal'));
+          gsap.from(element, { y: 30, opacity: 0, duration: .7, delay: (siblings.indexOf(element) % 3) * .08, ease: 'power2.out', scrollTrigger: { trigger: element, start: 'top 93%', once: true } });
+        });
+        document.fonts?.ready.then(() => { ScrollTrigger.refresh(); updateProgress(); });
+      }
+    } else document.documentElement.classList.remove('loading');
+    // Fine mouse pointers only. Use a lagging ring and a direct dot.
+    const finePointer = matchMedia('(hover: hover) and (pointer: fine)');
+    if (hasGSAP && !reducedMotion && finePointer.matches) {
+      const dot = select('.cursor-dot'), ring = select('.cursor-ring'), label = select('.cursor-ring span');
+      let pointerX = -100, pointerY = -100, ringX = -100, ringY = -100;
+      let cursorVisible = false;
+      gsap.set([dot, ring], { xPercent: -50, yPercent: -50 });
+      const moveDotX = gsap.quickSetter(dot, 'x', 'px'), moveDotY = gsap.quickSetter(dot, 'y', 'px');
+      const moveRingX = gsap.quickSetter(ring, 'x', 'px'), moveRingY = gsap.quickSetter(ring, 'y', 'px');
+      document.addEventListener('pointermove', event => {
+        if (event.pointerType !== 'mouse') { document.body.classList.remove('cursor-enabled'); cursorVisible = false; return; }
+        pointerX = event.clientX; pointerY = event.clientY;
+        document.body.classList.add('cursor-enabled');
+        if (!cursorVisible) { ringX = pointerX; ringY = pointerY; cursorVisible = true; }
+        moveDotX(pointerX); moveDotY(pointerY);
+        gsap.set([dot, ring], { opacity: 1 });
+      }, { passive: true });
+      gsap.ticker.add((time, deltaTime) => {
+        if (!cursorVisible) return;
+        const follow = 1 - Math.exp(-deltaTime / 70);
+        ringX += (pointerX - ringX) * follow; ringY += (pointerY - ringY) * follow;
+        moveRingX(ringX); moveRingY(ringY);
+      });
+      function hideCursor() { cursorVisible = false; document.body.classList.remove('cursor-enabled'); }
+      document.documentElement.addEventListener('pointerleave', hideCursor);
+      window.addEventListener('blur', hideCursor);
+      finePointer.addEventListener('change', hideCursor);
+      selectAll('a, button, .project').forEach(element => {
+        element.addEventListener('pointerenter', () => {
+          const showView = element.classList.contains('project');
+          gsap.to(ring, { scale: showView ? 1.7 : 1.35, duration: .2, overwrite: true });
+          gsap.to(label, { opacity: showView ? 1 : 0, duration: .15, overwrite: true });
+        });
+        element.addEventListener('pointerleave', () => {
+          gsap.to(ring, { scale: 1, duration: .2, overwrite: true });
+          gsap.to(label, { opacity: 0, duration: .15, overwrite: true });
+        });
+      });
+      selectAll('.magnetic').forEach(button => {
+        button.addEventListener('pointermove', event => {
+          if (event.pointerType !== 'mouse') return;
+          const bounds = button.getBoundingClientRect();
+          gsap.to(button, { x: (event.clientX - bounds.left - bounds.width / 2) * .18, y: (event.clientY - bounds.top - bounds.height / 2) * .18, duration: .3, overwrite: true });
+        });
+        button.addEventListener('pointerleave', () => gsap.to(button, { x: 0, y: 0, duration: .4, overwrite: true }));
+      });
+      selectAll('.project-shell').forEach(shell => {
+        const card = select('.project', shell);
+        shell.addEventListener('pointermove', event => {
+          if (event.pointerType !== 'mouse') return;
+          const bounds = shell.getBoundingClientRect();
+          gsap.to(card, { rotationY: (event.clientX - bounds.left - bounds.width / 2) / bounds.width * 7, rotationX: -(event.clientY - bounds.top - bounds.height / 2) / bounds.height * 7, y: -6, duration: .35, ease: 'power2.out', overwrite: true });
+        });
+        shell.addEventListener('pointerleave', () => gsap.to(card, { rotationX: 0, rotationY: 0, y: 0, duration: .45, overwrite: true }));
+      });
+    }
+    // Apply a changed accessibility preference immediately, including existing tweens.
+    motionPreference.addEventListener('change', () => window.location.reload());
+    // Real success only after a successful Formspree response. No simulated sending.
+    const form = select('#contact-form');
+    const status = select('#form-status');
+    form.addEventListener('submit', async event => {
+      event.preventDefault();
+      if (!form.reportValidity()) return;
+      if (form.action.includes('YOUR_FORM_ID')) {
+        status.textContent = 'The contact form is not connected yet. Please email sbsubin7127@gmail.com directly.';
+        return;
+      }
+      const submitButton = select('button[type="submit"]', form);
+      if (submitButton.disabled) return;
+      submitButton.disabled = true;
+      form.setAttribute('aria-busy', 'true');
+      status.textContent = 'Sending your message…';
+      const controller = new AbortController();
+      const timeout = setTimeout(() => controller.abort(), 15000);
+      try {
+        const response = await fetch(form.action, { method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' }, signal: controller.signal });
+        if (!response.ok) throw new Error('Delivery failed');
+        status.textContent = 'Thanks! Your message was sent successfully. I’ll get back to you soon.';
+        form.reset();
+      } catch (error) {
+        status.textContent = error.name === 'AbortError'
+          ? 'Delivery timed out and could not be confirmed. Please email me directly.'
+          : 'Your message could not be sent. Please try again or use the email link.';
+      } finally {
+        clearTimeout(timeout);
+        submitButton.disabled = false;
+        form.removeAttribute('aria-busy');
+      }
+    });
+  </script>
+</body>
+</html>
